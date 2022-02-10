@@ -1,0 +1,102 @@
+body {
+    font-size: 1rem;
+}
+
+.tm-bg-color-primary {
+    background-color: #79c1c3;
+}
+.container section:nth-child(2) {
+    position: relative;
+}
+
+.container section:nth-child(2) div:first-child.col-sm-12 {
+    position: absolute;
+    right: 0;
+}
+
+.container .tm-md-flex-center:nth-child(odd) h2 {
+    color: #79c1c3;
+}
+
+.tm-quote:nth-child(2) {
+    quotes: none;
+    font-style: normal;
+}
+
+.btn {
+    background: #20a0ad;
+}
+
+.btn:hover{
+    background: rgb(118, 205, 216);
+}
+
+.tm-pricing-header, .tm-form-footer {
+    background: #20a0ad;
+}
+
+.tm-form-header {
+    background: #35cfcf;
+}
+
+h2 + q.tm-quote {
+    margin-bottom: 1rem;
+}
+
+.tm-quote {
+    font-size: 1rem; 
+}
+
+section:nth-child(n+4){
+    margin-top: 2%;
+}
+
+.tm-pricing-table {
+    margin: 8% 0;
+}
+
+.tm-pricing-table:hover {
+    border: 4px #24d4d4 solid;
+    transform: scale(1.05);
+}
+
+.pl-2 {
+    z-index: 2;
+    height: 410px;
+    position: relative;
+    top: -44px;
+}
+
+body > div > section:nth-child(1) > div:nth-child(2):before {
+    opacity: 0;
+    transition: 0.35s opacity;
+    position: absolute;
+    content: '';
+    top: 0; 
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 0;
+    border-color: transparent #79c1c3 ;
+}
+
+body > div > section:nth-child(1) > div:nth-child(2):hover::before{
+    opacity: 1;
+}
+
+.tm-quote:nth-child(1):hover {
+    color: #79c1c3;
+}
+img {
+    transition: 0.35s transform;
+    z-index: 2;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.form-control:focus {
+    border: 2px #2cec12 solid;
+}
